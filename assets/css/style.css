@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    z-index: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estilo menu*/
+#menu-mobile img{
+    display: none;
+}
+.menu{
+    width: 100%;
+    height: 62px;
+    position: fixed;
+    display: flex;
+    background-color: #353535;
+    z-index: 9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#logo{
+    flex: 2;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#logo img{
+    width: 50%;
+}
+#menu-area{
+    flex: 6;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+#menu-area ul li{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    transition: all .4s;
+    text-align: center;
+}
+#menu-area ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #00ebc4;
+}
+
+.bloco{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.presentation{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+.Iam h1{
+    font-family: 'Josefin Sans bold', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #00ebc4;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.contacts{
+    display: flex;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.linkedin a, .git a, .email a, .whats a, .more a{
+    width: 150px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.linkedin a{   
+    border: 2px solid #0f5abb;
+    color: #0f5abb;
+}
+.git a{
+    border: 2px solid #f17603;
+    color: #f17603;
+}
+.btns a{
+    cursor: pointer;
+    text-decoration: none;    
+}
+
+.photo{
+    flex: 1;
+    text-align: center;
+}
+.photo img{
+    height: 100%;
+}
+.description{
+    width: 50%;
+    text-align: center;
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2;
+    margin: 20px;
+}
+.contacts{
+    display: flex;
+    color: #ddd;
+}
+.btns{
+    flex: 1;
+    margin-top: 30px;
+}
+.whats a{
+    border: 2px solid #08b42d;
+    color: #08b42d;
+}
+.email a{
+    border: 2px solid #0f5abb;
+    color: #0f5abb;
+}
+
+
+
+#habilidades{
+    flex-direction: column;
+}
+.tecnologias{
+    padding: 10px;
+}
+.tecnologias img{
+    margin-top: 10px;
+    width: 70px;
+}
+.tecnologias h3{
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/*Estilo slide*/
+.certificacoes{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.certificacoes h3{
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+}
+.slide{
+    display: flex;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slides{
+    width: 600px;
+    display: flex;
+}
+
+.image img{
+    width: 600px;
+}
+
+#atual{
+    transition: all 2s;
+}
+
+.btn{
+    padding: 10px;
+    color: #fff;
+    text-align: 10px;
+    cursor: pointer;
+    transition: all 0,4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+.btn-slide{
+    position: absolute;
+    width: 720px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn:hover{
+    transform: scale(1.5);
+}
+
+#voltar{
+    top: 50%;
+    left: 10%;
+}
+#next{
+    top: 50%;
+    right: 10%;
+}
+.balls{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+.balls div:hover{
+    background: #fff;
+}
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+}
+
+
+
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#projetos h3{
+    flex: 1;
+    margin-top: 80px;
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 2;
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    height: 70vh;
+    width: 100%;
+}
+#p1, #p2, #p3{
+    flex:1;
+    border:2px solid #6e6e6e;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    height: 300px;
+}
+#p1:hover, #p2:hover, #p3:hover{
+    box-shadow: 0 0 15px #6e6e6e, inset 0 0 15px #6e6e6e;
+    text-shadow:  0 0 15px #6e6e6e, inset 0 0 15px #6e6e6e;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.more a{
+    border: 2px solid #08b42d;
+    color: #08b42d;
+}
+
+@media (max-width:960px){
+    .contacts{
+        width: 100%;
+    }
+    .bloco{
+        flex-direction: column;
+    }
+    .presentation, .description{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Iam{
+        margin-top: 140px;
+    }
+    
+    .photo{
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .photo img{
+        margin: auto;
+    }
+
+    #quem_sou{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .description{
+        margin-top: 50px;
+    }
+
+    .projetos{
+        flex-direction: column;
+    }
+    #p1, #p2, #p3{
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width:720px){
+    .menu{
+        height: 50px;
+    }
+    #menu-mobile{
+        flex:1;
+        text-align: center;
+    }
+    #menu-mobile img{
+        display: block;
+        float: right;
+    }
+    #logo{
+        flex: 1;
+    }
+    #menu-area ul li{
+        display: block;
+    }  
+    #menu-area {
+        margin-top: 50px;
+        width: 50%;
+        position: absolute;
+        margin-left: 100%;
+        overflow:hidden;
+        transition: all ease .5s;
+    }
+
+    .presentation, .description{
+        width: 80%;
+    }
+
+    .slide, .slides, .image img{
+        width: 500px;
+    }
+    .btn-slide{ 
+        width: 550px;
+    }
+
+    #p1, #p2, #p3{
+        width: 60%;
+        margin-top: 10px;
+    }
+
+}
+@media (max-width:600px){
+    #quem_sou .photo img{
+        width: 400px;
+    }
+    .tecnologias img{
+        width: 50px;
+        margin-top: 15px;
+    }
+
+    .slide, .slides, .image img{
+        width: 400px;
+    }
+    .btn-slide{ 
+        width: 440px;
+    }
+
+    #p1, #p2, #p3{
+        width: 70%;
+        margin-top: 10px;
+    }
+}
+@media (max-width:440px){
+    #quem_sou .photo img{
+        width: 300px;
+    }
+    .Iam{
+        margin-top: 80px;
+    }
+    .linkedin a, .git a{
+        width: 120px;
+    }
+    .menu{
+        height: 40px;
+    }
+    #menu-area{
+        margin-top: 40px;
+    }
+    .slide, .slides, .image img{
+        width: 320px;
+    }
+    .btn-slide{ 
+        width: 352px;
+    }
+    #p1, #p2, #p3{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .menu{
+        height: 5%;
+    }
+}
+
+@media (max-width:340px){
+    #quem_sou .photo img{
+        width: 280px;
+    }
+    .menu{
+        height: 30px;
+    }
+    #menu-area{
+        margin-top: 30px;
+    }
+    .presentation, .description{
+        width: 100%;
+    }
+    .slide, .slides, .image img{
+        width: 260px;
+    }
+    .btn-slide{ 
+        width: 300px;
+    }
+    .tecnologias img{
+        width: 30px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:280px){
+    #quem_sou .photo img{
+        width: 200px;
+    }
+    .presentation, .description{
+        width: 100%;
+    }
+    .slide, .slides, .image img{
+        width: 240px;
+    }
+    .btn-slide{ 
+        width: 260px;
+    }
+}
